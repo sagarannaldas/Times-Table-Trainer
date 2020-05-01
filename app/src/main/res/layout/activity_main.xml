@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_activity"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/tablesChartsButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="162dp"
+        android:background="@drawable/oval_button"
+        android:onClick="tablesCharts"
+        android:tag="1"
+        android:text="TABLES CHARTS ( 1-10 )"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/quiz1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="160dp"
+        android:background="@drawable/oval_button"
+        android:onClick="quiz"
+        android:tag="1"
+        android:text="QUIZ LEVEL 1 ( 0 - 10 )"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tablesChartsButton2" />
+
+    <Button
+        android:id="@+id/quiz2button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="161dp"
+        android:background="@drawable/oval_button"
+        android:onClick="quiz"
+        android:tag="2"
+        android:text="QUIZ LEVEL 2 ( 0 - 20 )"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz1Button" />
+
+    <Button
+        android:id="@+id/rateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="143dp"
+        android:background="@drawable/oval_button"
+        android:onClick="rate"
+        android:text="RATE THIS APP"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz2button" />
+
+    <Button
+        android:id="@+id/tablesChartsButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="111dp"
+        android:background="@drawable/oval_button"
+        android:onClick="tablesCharts"
+        android:tag="2"
+        android:text="TABLES CHARTS ( 11-20 )"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tablesChartsButton1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
